@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inconsolata:wght@300;400;500&family=Indie+Flower&family=Montserrat:wght@500&family=Orbitron:wght@400;500&family=Shadows+Into+Light&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    color: black;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: palevioletred;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+.landing {
+    padding-bottom: 400px;
+    background-image: linear-gradient(aqua, white);  
+    z-index: -100;
+}
+
+.bogu {
+    height: 350px;
+}
+
+.hi {
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    font-size: 40px;
+    animation: text-change 1.5s infinite;
+}
+
+@keyframes text-change {
+    0% { font-size: 40px; 
+         color: palevioletred;}
+    50% { font-size: 45px;
+          color: darkorchid; }
+    100% { font-size: 40px; 
+           color: palevioletred;}
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+    transform: scale(0.2);
+}
+
+@media (prefers-reduced-motion) {
+    .hidden {
+      transition: all 1s;
+    }
+}
+
+.show {
+    opacity: 1;
+    transform:scale(1)
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    image-rendering: pixelated;
+}
+
+
+
+.slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.fg4, .fg3, .fg2, .fg1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.fg4 {
+    transform: translateZ(-15px) scale(2.5);
+}
+  
+.fg3 {
+    transform: translateZ(-10px) scale(2);
+}
+
+.fg2 {
+    transform: translateZ(-10px) scale(2);
+}
+
+.fg1, .white {
+    transform: translateZ(-5px) scale(1.5);
+}
+
+.start {
+    position: fixed;
+    top: 920px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    background-color: white;
+    transform: translateZ(-5px) scale(1.5);
+    width: 100%;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+}
+
+.snow-bg {
+    border-width: 5px;
+    border-color: black;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    gap: 500px;
+    width: auto;
+}
+
+.two-1, .two-2, .two-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100px;
+    width: 100%;
+}
+
+.two-1-1, .two-1-2,
+.two-2-1, .two-2-2,
+.two-3-1, .two-3-2, .two-3-3 {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two-1-1 {
+    border: 2px solid black;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: aqua;
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 80px;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+}
+
+.two-1-2 {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 830px;
+    width: 200px;
+    height: 200px;
+    text-align: left;
+}
+
+.camp {
+    width: 100px;
+}
+
+.two-2-1 {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    margin-top: 210px;
+    margin-left: 450px;
+    width: 600px;
+    height: 200px;
+    text-align: center;
+}
+
+.cat-container { 
+    width: 200px; 
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+#catImage, .simbi{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#fetchButton, #fetchButton2 {
+    cursor: pointer;
+    background-color: pink;
+    border-radius: 8px;
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    box-shadow: 0 5px black;
+}
+
+.bearButton {
+    position: absolute;
+    right: 200px;
+    top: 1850px;
+    cursor: pointer;
+    background-color: aqua;
+    border-radius: 8px;
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    box-shadow: 0 5px black;
+}
+
+#fetchButton:hover, #fetchButton2:hover, .bearButton:hover{
+    color: rgb(184, 24, 24);
+}
+
+#fetchButton:active, #fetchButton2:active, .bearButton:active{
+    background-color: palevioletred;
+    transform: translateY(4px);
+    color: black;
+}
+
+.two-2-2 {
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: aqua;
+    position: absolute;
+    margin-left: 1200px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.two-3-1 {
+    display: none;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: aqua;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 700px;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+}
+
+.two-3-2 {
+    background-image: linear-gradient(aqua, rgb(68, 207, 68));
+    position: absolute;
+    margin-top: 800px;
+    margin-left: 200px;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.two-3-3 {
+    position: absolute;
+    margin-top: 840px;
+    margin-left: 1100px;
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    background-color: plum; 
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+#flower {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+
+}
+
+#flowerb {
+    background-color: plum;
+    border: none;
+    width: 100px;
+    height: 80px;
+    border-radius: 15px;
+}
+
+#flowerb:hover {
+    background-color: red;
+}
+
+

@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inconsolata:wght@300;400;500&family=Indie+Flower&family=Montserrat:wght@500&family=Orbitron:wght@400;500&family=Shadows+Into+Light&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.bg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    position: relative;
+}
+
+.bg {
+    height: 100%;
+    image-rendering: pixelated;
+    overflow: hidden;
+}
+
+.map {
+    position: absolute;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+.flag{
+    display: flex;
+    position: absolute;
+}
+
+.pin {
+    position: absolute;
+    top: -180px;
+    left: 50px;
+}
+
+.pin-text {
+    position: absolute;
+    width: 8rem;
+    padding: 2px;
+    background-color: aquamarine;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: #121212 0px 2px;
+    pointer-events: none;
+}
+
+.pin-img-1 {
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    width: 12rem;
+    height: 6rem;
+    padding: 2px;
+    align-self: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.pin-img-2 {
+    position: absolute;
+    top: -120px;
+    left: 130px;
+    width: 12rem;
+    height: 6rem;
+    padding: 2px;
+    align-self: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.pin-img-3 {
+    position: absolute;
+    top: -120px;
+    left: 30px;
+    width: 10rem;
+    height: 6rem;
+    padding: 2px;
+    align-self: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.pin:hover {
+    .pin-text, .pin-img-1, .pin-img-2, .pin-img-3{
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+.pin img, .flag-1 img, .flag-2 img, .flag-3 img, .flag-4 img {
+    height: 35px;
+}
+
+.pin-img-3 img {
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 100px;
+    width: auto;
+
+}
+
+.pin-img-1 img, .pin-img-2 img, .flag-3-img img, .flag-3-img-2 img, .flag-3-img-3 img, .flag-4-img img {
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 200px;
+    width: auto;
+}
+
+.flag-1 {
+    position: absolute;
+    top: -100px;
+    left: -270px;
+}
+
+.flag-1-text {
+    position: absolute;
+    width: 8rem;
+    padding: 2px;
+    background-color: aquamarine;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: #121212 0px 2px;
+    pointer-events: none;
+}
+
+.flag-1-text-2 {
+    position: absolute;
+    top: 110px;
+    left: 15px;
+    width: 9rem;
+    padding: 2px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: #121212 0px 2px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.flag-1-img {
+    position: absolute;
+    top: 180px;
+    left: 30px;
+    width: 12rem;
+    height: 8rem;
+    padding: 2px;
+    align-self: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.flag-1-img img {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.flag-1:hover {
+    .flag-1-text, .flag-1-text-2, .flag-1-img {
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+.flag-2 {
+    position: absolute;
+    top: -110px;
+    left: -70px;
+}
+
+.flag-2-text {
+    position: absolute;
+    width: 8rem;
+    padding: 2px;
+    background-color: aquamarine;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: #121212 0px 2px;
+    pointer-events: none;
+}
+
+.flag-2-img {
+    position: absolute;
+    top: 110px;
+    left: 30px;
+    width: 12rem;
+    height: 6rem;
+    padding: 2px;
+    align-self: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.flag-2-img img {
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 200px;
+    width: auto;
+}
+
+.flag-2:hover {
+    .flag-2-text, .flag-2-img {
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+.flag-3 {
+    position: absolute;
+    top: 60px;
+    left: -110px;
+}
+
+.flag-3-text {
+    position: absolute;
+    width: 8rem;
+    padding: 2px;
+    background-color: aquamarine;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: #121212 0px 2px;
+    pointer-events: none;
+}
+
+.flag-3-img {
+    position: absolute;
+    top: 50px;
+    left: 130px;
+    width: 12rem;
+    height: 6rem;
+    padding: 2px;
+    align-self: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.flag-3-img-2 {
+    position: absolute;
+    top: -160px;
+    left: 130px;
+    width: 12rem;
+    height: 6rem;
+    padding: 2px;
+    align-self: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.flag-3-img-3 {
+    position: absolute;
+    top: -70px;
+    left: 300px;
+    width: 12rem;
+    height: 6rem;
+    padding: 2px;
+    align-self: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.flag-3:hover {
+    .flag-3-text, .flag-3-img, .flag-3-img-2, .flag-3-img-3{
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+.flag-4 {
+    position: absolute;
+    top: -160px;
+    left: -250px;
+}
+
+.flag-4-text {
+    position: absolute;
+    width: 8rem;
+    padding: 2px;
+    background-color: aquamarine;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: #121212 0px 2px;
+    pointer-events: none;
+}
+
+.flag-4-img {
+    position: absolute;
+    top: -70px;
+    left: 300px;
+    width: 12rem;
+    height: 6rem;
+    padding: 2px;
+    align-self: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.flag-4:hover {
+    .flag-4-text, .flag-4-img {
+        opacity: 1;
+        z-index: 1;
+    }
+}

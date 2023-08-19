@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inconsolata:wght@300;400;500&family=Indie+Flower&family=Montserrat:wght@500&family=Orbitron:wght@400;500&family=Shadows+Into+Light&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    background-image: url(/images/abstract-art-black-background-blur.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.r1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#tent1 {
+    height: 660px;
+    width: auto;
+}
+
+#tent2 {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 200px;
+    height: 200px;
+    width: auto;
+}
+
+#tent2-text {
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    background-color: wheat;
+    justify-self: center;
+    text-align: center;
+    margin-top: 130px;
+    margin-left: -50px;
+    height: auto;
+    width: 100px;
+}
+
+#tent1-text {
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    background-color: wheat;
+    justify-self: center;
+    text-align: center;
+    margin-top: -450px;
+    margin-left: -20px;
+    height: auto;
+    width: 100px;
+}
+
+
+#change {
+    position: absolute;
+    margin-left: 150px;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    background-color: pink;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px black;
+}
+
+#change:hover {
+    color: rgb(184, 24, 24);
+}
+
+#change:active {
+    background-color: palevioletred;
+    color: black;
+    transform: translateY(4px);
+}
+
+#pie {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 30px;
+    height: 200px;
+    width: auto;
+    border-radius: 15px;
+}
+
+#ramen {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 30px;
+    height: 200px;
+    width: auto;
+    border-radius: 15px;
+}
+
+#pizza {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 30px;
+    height: 200px;
+    width: auto;
+    border-radius: 15px;
+}
+
+#flower {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 30px;
+    height: 200px;
+    width: auto;
+    border-radius: 15px;
+}
